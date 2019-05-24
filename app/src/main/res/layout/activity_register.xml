@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:text="@string/register"
+                android:textColor="#dddddd"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/email1"
+                android:drawablePadding="15dp"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="#dddddd"
+                android:textColorHint="#dddddd" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/lock"
+                android:drawablePadding="15dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#dddddd"
+                android:textColorHint="#dddddd" />
+
+            <EditText
+                android:id="@+id/fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/name"
+                android:drawablePadding="15dp"
+                android:hint="@string/fullname"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="#dddddd"
+                android:textColorHint="#dddddd" />
+
+            <EditText
+                android:id="@+id/phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/phone"
+                android:drawablePadding="15dp"
+                android:hint="@string/phonenumber"
+                android:singleLine="true"
+                android:textColor="#dddddd"
+                android:textColorHint="#dddddd" />
+
+
+            <Spinner
+                android:id="@+id/spinner1"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:spinnerMode="dropdown" />
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/signin"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonback"
+                android:fontFamily="sans-serif"
+                android:text="@string/sign_up"
+                android:textAllCaps="false"
+                android:textColor="#ffffff" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/email_signup"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonback_blue"
+                android:fontFamily="sans-serif"
+                android:text="@string/sign_in"
+                android:textAllCaps="false"
+                android:textColor="#ffffff" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/home_regsiter"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/home_button"
+                android:fontFamily="sans-serif"
+                android:text="@string/home"
+                android:textAllCaps="false"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:gravity="center_horizontal"
+                android:text="@string/start_terms"
+                android:textColor="#bbb"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
